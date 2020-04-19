@@ -1,3 +1,4 @@
+@import "general.css";
 @import "header.css";
 @import "footer.css";
 
@@ -9,76 +10,6 @@
 @font-face {
     font-family: "BISON Regular";
     src: url("../fonts/Bison-Regular.ttf");
-}
-
-body {
-    background-color: #f6fafb;
-    font-size: 15px;
-    color: #111;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: #111;
-}
-
-a:hover {
-    color: #474787;
-}
-
-p {
-    line-height: 1.4;
-}
-
-figcaption {
-    color: #aaa;
-}
-
-.btn {
-    border: 1px solid currentColor;
-    color: #474787;
-    border-radius: 5px;
-    padding: 5px 10px;
-    display: block;
-    max-width: fit-content;
-}
-
-.btn:hover {
-    background-color: #474787;
-    color: #fff;
-}
-
-.btn i {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.image-left, .image-right {
-    float: none;
-}
-
-.meta-description {
-    color: #000;
-}
-
-.meta-description strong {
-    color: #474787;
-}
-
-.container {
-    display: grid;
-    grid-template-rows: 75px 1fr 175px;
-    grid-template-columns: 100vw;
-}
-
-.inside {
-    max-width: 100%;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0 20px;
-
 }
 
 .blog-area {
@@ -196,22 +127,6 @@ figcaption {
     font-family: Bison Bold;
 }
 
-.tags {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.tags li {
-    display: inline;
-    margin-right: 30px;
-    color: #474787;
-    text-transform: uppercase;
-}
-
-.tags li:last-child {
-    margin-right: 0;
-}
 
 .blog-entry-content .text {
     font-size: 1.1em;
@@ -266,9 +181,6 @@ figcaption {
     padding: 50px 0;
 }
 
-.go-back {
-    margin-bottom: 10px;
-}
 
 .breadcrumb {
     text-transform: uppercase;
@@ -400,14 +312,6 @@ figcaption {
 
 @media (min-width: 700px) {
 
-    .image-right {
-        float: right;
-    }
-
-    .image-left {
-        float: left;
-    }
-
     .blog-entry {
         grid-template-columns: 1fr 1fr;
         justify-content: space-between;
@@ -491,10 +395,6 @@ figcaption {
         margin: 0;
     }
 
-    .inside {
-        max-width: 980px;
-    }
-
     .blog-entry {
         grid-template-columns: 1fr minmax(auto, 450px);
         justify-content: space-between;
@@ -507,9 +407,6 @@ figcaption {
 }
 
 @media (min-width: 1180px) {
-    .inside {
-        max-width: 1180px;
-    }
 
     .blog-area {
         background-position: initial;
@@ -523,9 +420,6 @@ figcaption {
 }
 
 @media (min-width: 1921px) {
-    .inside {
-        max-width: 1500px;
-    }
 
     .blog-area {
         background-size: cover;
