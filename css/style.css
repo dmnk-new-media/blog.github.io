@@ -1,5 +1,5 @@
-@import "_header.css";
-@import "_footer.css";
+@import "header.css";
+@import "footer.css";
 
 @font-face {
     font-family: "BISON Bold";
